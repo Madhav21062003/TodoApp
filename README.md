@@ -14,7 +14,7 @@ Task Deletion: Remove completed or outdated tasks to maintain a clutter-free tas
 
 Task Sorting: Arrange your tasks based on priority, due date, or creation date for better organization.
 
-For Feedback or Suggestions Mail Me At madhav09solankicom 🙂
+For Feedback or Suggestions Mail Me At madhav09solanki@gmail.com 🙂
 
 Some ScreenShots 😃:</br>
 ![s1](https://github.com/Madhav21062003/TodoApp/assets/117305306/8d780284-d59e-4eb3-9e3d-e98efaed76d1)
