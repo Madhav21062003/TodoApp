@@ -16,9 +16,14 @@ Task Sorting: Arrange your tasks based on priority, due date, or creation date f
 
 
 Some ScreenShots 😃:</br>
-<img src="![s1](https://github.com/Madhav21062003/TodoApp/assets/117305306/8d780284-d59e-4eb3-9e3d-e98efaed76d1)" width=45% height=30%/>
-<img src="![s2](https://github.com/Madhav21062003/TodoApp/assets/117305306/5af22619-46aa-427a-aff5-9d6e54f6d522))" width=45% height=30%/>
-<img src="![s3](https://github.com/Madhav21062003/TodoApp/assets/117305306/dbd1b056-d278-459b-a670-9a7b437a9080)" width=45% height=30%/>
-<img src="![s4](https://github.com/Madhav21062003/TodoApp/assets/117305306/d45cab6f-9617-494e-be69-6a90de9b0cd4)" width=45% height=30%/>
+![s1](https://github.com/Madhav21062003/TodoApp/assets/117305306/8d780284-d59e-4eb3-9e3d-e98efaed76d1)
+![s2](https://github.com/Madhav21062003/TodoApp/assets/117305306/5af22619-46aa-427a-aff5-9d6e54f6d522)
+![s3](https://github.com/Madhav21062003/TodoApp/assets/117305306/dbd1b056-d278-459b-a670-9a7b437a9080)
+![s2](https://github.com/Madhav21062003/TodoApp/assets/117305306/d7921ddf-0638-4557-b649-04d0375e90d8)
+![s4](https://github.com/Madhav21062003/TodoApp/assets/117305306/d45cab6f-9617-494e-be69-6a90de9b0cd4)
+![s4](https://github.com/Madhav21062003/TodoApp/assets/117305306/f47557f0-0197-4e0e-83bd-965b339c1554)
+
+
+For Feedback or Suggestions Mail Me At madhav09solankicom 🙂
 
 
