@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".auth.RegisterActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+      <TextView
+        android:id="@+id/tvSignUp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="left"
+          android:gravity="left"
+          app:layout_constraintTop_toTopOf="@+id/ivUserImage"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:text="Sign Up Please"
+          android:layout_marginStart="29.90dp"
+          android:letterSpacing="0.03"
+          android:layout_marginEnd="195.00dp"
+          android:layout_marginTop="26.00dp"
+          android:layout_marginBottom="13.00dp"
+          android:textSize="26.00dp"
+          android:textColor="@color/Hardblue"
+          android:textStyle="bold"
+          />
+
+      <com.google.android.material.imageview.ShapeableImageView
+          android:id="@+id/ivUserImage"
+          android:layout_width="156.00dp"
+          android:layout_height="156.00dp"
+          android:layout_marginTop="10dp"
+          android:clickable="true"
+          android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/circle_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSignUp"/>
+
+      <TextView
+        android:id="@+id/tvWelcome"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+        android:letterSpacing="0.04"
+          android:layout_gravity="center"
+        android:text="Upload Image"
+          android:layout_marginTop="5dp"
+        android:textColor="@color/Hardblue"
+        android:textSize="19.50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ivUserImage"/>
+
+      <LinearLayout
+        android:id="@+id/llUserSelection"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome"
+        android:layout_marginTop="26.00dp">
+
+        <TextView
+          android:id="@+id/tvSelectionUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:letterSpacing="0.04"
+          android:layout_marginStart="26dp"
+          android:text="Select User Type* "
+          android:textColor="@color/Hardblue"
+          android:textSize="15.60sp"
+          android:textStyle="bold"/>
+
+        <RadioGroup
+          android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_weight="1">
+
+          <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rbContractor"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+            android:text="Boss"
+            app:useMaterialThemeColors="false"
+            android:checked="false"
+            android:textColor="@color/Hardblue"
+            android:layout_marginStart="32.50dp"
+            android:button="@drawable/custom_radio_button"
+            android:layout_weight="0.25"
+            android:textStyle="bold"/>
+
+          <com.google.android.material.radiobutton.MaterialRadioButton
+              android:id="@+id/rbClient"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Employee"
+              app:useMaterialThemeColors="false"
+              android:checked="false"
+              android:textColor="@color/Hardblue"
+              android:layout_marginStart="32.50dp"
+              android:button="@drawable/custom_radio_button"
+              android:layout_weight="0.25"
+              android:textStyle="bold"/>
+
+
+        </RadioGroup>
+      </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tvNameLL"
+            style="@style/LoginTextInputOuterFielsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20.80dp"
+            app:boxStrokeColor="@color/Hardblue"
+            app:hintTextColor="@color/black"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/Hardblue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_fileds"
+                android:hint="Enter your Name"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tvEmailLL"
+        style="@style/LoginTextInputOuterFielsStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20.80dp"
+        app:boxStrokeColor="@color/Hardblue"
+        app:hintTextColor="@color/black"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/Hardblue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_fileds"
+            android:hint="Enter your Email"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPasswordL"
+        style="@style/LoginTextInputOuterFielsStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20.80dp"
+        app:boxStrokeColor="@color/Hardblue"
+        app:hintTextColor="@color/black"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/Hardblue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_fileds"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etConfirmPasswordLL"
+        style="@style/LoginTextInputOuterFielsStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20.80dp"
+        app:boxStrokeColor="@color/Hardblue"
+        app:hintTextColor="@color/black"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/Hardblue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_fileds"
+            android:hint="Confirm Password"
+            android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnregister"
+        android:layout_width="match_parent"
+        android:layout_height="65.00dp"
+        android:layout_marginTop="13.00dp"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:letterSpacing="0.1"
+        app:backgroundTint="@color/Hardblue"
+        android:textStyle="bold"
+        android:textSize="19.50dp"
+        app:cornerRadius="@dimen/_8sdp"
+        android:layout_marginHorizontal="20.80dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.01"
+            android:text="Already have an account?"
+            android:textAlignment="center"
+            android:textColor="@color/Light1"
+            android:textStyle="bold"/>
+        
+        <TextView
+            android:id="@+id/tvSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.01"
+            android:layout_gravity="center"
+            android:text=" Sign In"
+            android:textColor="@color/Hardblue"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
+  
+
+
+  </ScrollView>
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="16.60dp"
+    android:backgroundTint="@color/white"
+    android:backgroundTintMode="@color/white"
+
+    app:cardElevation="2.60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="@dimen/_8sdp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivEmployeeProfile"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="10dp"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            android:scaleType="centerCrop"
+            android:src="@drawable/circle_shape"/>
+
+        <TextView
+            android:id="@+id/tvEmployeeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Madhav Solanki"
+            android:textSize="26sp"
+            android:textColor="@color/Hardblue"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

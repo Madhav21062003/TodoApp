@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="@dimen/_7sdp"
+    app:cardCornerRadius="@dimen/_7sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            app:layout_constraintBottom_toTopOf="@+id/worksLL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/workStatus"
+                android:layout_width="@dimen/_235sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/tvTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ivOval"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12-12-2023"
+                    android:textColor="@color/Light1"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_100sdp"
+                    android:textColor="#E25F84"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/ivOval"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/circle_shape_three"
+                app:layout_constraintStart_toEndOf="@+id/workStatus"
+                app:layout_constraintTop_toBottomOf="@id/workStatus"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Title"
+                android:textColor="@color/Hardblue"
+                android:textStyle="bold"
+                android:textSize="@dimen/_17ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/workStatus"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/worksLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout">
+
+            <TextView
+                android:id="@+id/workDescT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work Description"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:padding="@dimen/_1sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/Medium"/>
+
+            <TextView
+                android:id="@+id/tvWorkDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_1sdp"
+                android:textColor="@color/Medium"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:text="This is description of work"/>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnWorkDone"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Unassigned"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/Hardblue"
+            app:layout_constraintTop_toBottomOf="@id/worksLL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cornerRadius="@dimen/_20sdp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

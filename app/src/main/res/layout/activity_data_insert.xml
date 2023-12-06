@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CF8DA5"
+    android:backgroundTintMode="src_over"
+    android:padding="10dp"
+    tools:context=".DataInsertActivity">
+
+    <EditText
+        android:id="@+id/insert_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="Give Title"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/insert_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Give Descriptiom"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:textColor="#B81A1A"
+        app:layout_constraintEnd_toEndOf="@+id/insert_title"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/insert_title"
+        app:layout_constraintTop_toBottomOf="@+id/insert_title" />
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:background="#B83232"
+        android:backgroundTint="@color/white"
+        android:padding="5dp"
+        android:text="Insert"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/insert_description"
+        app:layout_constraintStart_toStartOf="@+id/insert_description"
+        app:layout_constraintTop_toBottomOf="@+id/insert_description" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="To update data Swipe Left \n to delete data swipe Right"
+        android:textStyle="bold"
+        android:textColor="#DE0A0A"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_insert"
+        app:layout_constraintTop_toBottomOf="@+id/btn_insert" />
+</androidx.constraintlayout.widget.ConstraintLayout>

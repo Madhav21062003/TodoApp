@@ -1,0 +1,52 @@
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.storage.FirebaseStorage
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.tasks.await
+
+// Function to delete the user account and associated data from Firebase
+private fun deleteUserAccount(user: FirebaseUser?) {
+    // Check if the user is not null
+    user?.let { firebaseUser ->
+        // Accessing Coroutines through lifecycleScope
+        lifecycleScope.launch(Dispatchers.IO) {
+            try {
+                // Delete the user's profile image from Firebase Storage
+                val storageRef = FirebaseStorage.getInstance().reference
+                val imageRef = storageRef.child("Profile/${firebaseUser.uid}/Profile.jpg")
+                imageRef.delete().await()
+
+                // Delete the user's data from the Realtime Database
+                val dbRef = FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.uid)
+                dbRef.removeValue().await()
+
+
+                 // Delete the user account from Firebase Authentication
+                    firebaseUser.delete().await()
+
+                     Utils.showToast(this, "Account Deleted Successfully..")
+
+                // Delete the user's data from Firestore
+
+               // val firestore = FirebaseFirestore.getInstance()
+               // val userDocRef = firestore.collection("users").document(firebaseUser.uid)
+              //  userDocRef.delete().await()
+
+
+                // Account deleted successfully
+                // You can add any additional actions or messages here
+            } catch (e: Exception) {
+                // Handle any errors that occur during deletion
+                // You can customize the error handling based on the specific exceptions
+                // For example, handle different exceptions like Firebase Network Exceptions or any other possible errors
+
+                Utils.showToast(this, e.message.toString())
+            }
+        }
+    }
+}
+
+

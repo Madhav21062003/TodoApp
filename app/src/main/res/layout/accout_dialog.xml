@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_5sdp"
+    android:padding="@dimen/_5sdp"
+    android:id="@+id/markerCL">
+
+    <ImageView
+        android:id="@+id/doneImage"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/accverified"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <TextView
+        android:id="@+id/markedTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acount Created"
+        android:textColor="@color/Hardblue"
+        android:textSize="@dimen/_15ssp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/doneImage"/>
+    
+    <TextView
+        android:id="@+id/markedDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Check your Gmail to verify email"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/Hardblue"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/markedTitle"
+        app:layout_constraintBottom_toTopOf="@id/btnOk"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="OK"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/Hardblue"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/markedDesc"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
